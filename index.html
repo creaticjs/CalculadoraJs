@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+      <p class="results" id="result"></p>
+    </div>
+
+    <div class="container">
+      <button class="btn" value="7" id="num7" onclick="mostrarEnPantalla(this.value)">7</button>
+      <button class="btn" value="8" id="num8" onclick="mostrarEnPantalla(this.value)">8</button>
+      <button class="btn" value="9" id="num9" onclick="mostrarEnPantalla(this.value)">9</button>
+      <button class="operador" value="+" id="suma" onclick="modificarBandera(this.value)">+</button>
+    </div>
+
+    <div class="container">
+      <button class="btn" value="4" id="num4" onclick="mostrarEnPantalla(this.value)">4</button>
+      <button class="btn" value="5" id="num5" onclick="mostrarEnPantalla(this.value)">5</button>
+      <button class="btn"value="6" id="num6" onclick="mostrarEnPantalla(this.value)">6</button>
+      <button class="operador" value="-" id="resta" onclick="modificarBandera(this.value)">-</button>
+    </div>
+
+    <div class="container">
+      <button class="btn" value="1" id="num1" onclick="mostrarEnPantalla(this.value)">1</button>
+      <button class="btn" value="2" id="num2" onclick="mostrarEnPantalla(this.value)">2</button>
+      <button class="btn" value="3" id="num3" onclick="mostrarEnPantalla(this.value)">3</button>
+      <button class="operador" value="*" id="mul" onclick="modificarBandera(this.value)">x</button>
+    </div>
+
+  <div class="container">
+    <button class="btn" value="." id="numPunto" onclick="mostrarEnPantalla(this.value)">.</button>
+    <button class="btn" value="0" id="num0" onclick="mostrarEnPantalla(this.value)">0</button>
+    <button class="btn" value="C" id="eliminar" onclick="eliminarCaracter(this.value)">C</button>
+    <!--<button class="btn" value="CC" id="cc" onclick="eliminarTodo(this.value)">CC</button>-->
+    <button class="operador" value="/" id="div" onclick="modificarBandera(this.value)">/</button>
+
+  </div>
+  <div class="container">
+    <button class="operador" value="=" id="igual" onclick="modificarBandera(this.value)">=</button>
+  </div>
+
+
+    <script type="text/javascript" src="logica.js" ></script>
+  </body>
+
+</html>
